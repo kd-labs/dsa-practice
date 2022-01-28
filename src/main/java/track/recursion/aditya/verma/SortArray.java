@@ -1,7 +1,5 @@
 package track.recursion.aditya.verma;
 
-import jdk.internal.util.xml.impl.Pair;
-
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
@@ -22,7 +20,7 @@ public class SortArray {
      */
     public static int[] sortArray(int[] arr) {
 
-        Pair pair = null;
+//        Pair pair = null;
         /*
             Base :
                 if size of array is 1, then return
