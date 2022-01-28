@@ -4,31 +4,32 @@ public class NumberOfTimesSortedArrayIsRotated {
 
     public static void main(String[] args) {
 
-        int[] arr = {3,4,5,1,2};
+        int[] arr = {4,5,6,7,0,1,2};
 
-        System.out.printf("Array is rotated %d times.\n", binarySearchSmallestElement(arr));
+        System.out.printf("Array is rotated %d times.\n", binarySearchSmallestElementIndex(arr));
 
     }
 
-    private static int binarySearchSmallestElement(int[] arr) {
-        int start = 0, end = arr.length-1, mid, res = -1;
+    public static int binarySearchSmallestElementIndex(int[] arr) {
+
+        int start = 0, n = arr.length, end = n-1, mid, prev, next;
 
         while(start <= end) {
 
-            mid = start + ((end-start)/2);
+            mid = start + (end-start)/2;
 
-            if(arr[mid] < arr[mid-1]&& arr[mid] < arr[mid+1]) {
+            prev = (mid-1+n)%n;
+            next = (mid+1)%n;
+
+            if(arr[mid] <= arr[prev] && arr[mid] <= arr[next]) {
                 return mid;
-            } else if(arr[start] < arr[mid]) {
-                // means left side is sorted so go right
-                start = mid+1;
-            } else {
-                // right side is sorted so go left
+            } else if(arr[mid] <= arr[end]) {
                 end = mid-1;
+            } else if(arr[start] <= arr[mid]) {
+                start = mid + 1;
             }
-
         }
 
-       return res;
+        return 0;
     }
 }
