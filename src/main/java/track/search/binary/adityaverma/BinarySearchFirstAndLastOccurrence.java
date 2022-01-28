@@ -13,7 +13,7 @@ public class BinarySearchFirstAndLastOccurrence {
 
     }
 
-    private static int binarySearchFirstOccurrence(int[] arr, int search) {
+    public static int binarySearchFirstOccurrence(int[] arr, int search) {
 
         int start = 0, end = arr.length-1, res = -1, mid;
 
@@ -33,7 +33,7 @@ public class BinarySearchFirstAndLastOccurrence {
         return res;
     }
 
-    private static int binarySearchLastOccurrence(int[] arr, int search) {
+    public static int binarySearchLastOccurrence(int[] arr, int search) {
 
         int start = 0, end = arr.length-1, res = -1, mid;
 
