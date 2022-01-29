@@ -8,7 +8,7 @@ public class PeakElement {
         System.out.printf("Peak element in given arr is %d.\n", arr[searchPeakElement(arr)]);
     }
 
-    private static int searchPeakElement(int[] arr) {
+    public static int searchPeakElement(int[] arr) {
         int start = 0, n = arr.length, end = n-1, mid, res = -1;
 
         while(start <= end) {
