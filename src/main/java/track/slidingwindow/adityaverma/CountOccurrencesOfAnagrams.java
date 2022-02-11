@@ -64,7 +64,7 @@ public class CountOccurrencesOfAnagrams {
         Map<Character, Long> map1 =
                 pattern.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
-        Map<Character, Integer> map = new HashMap<>();
+    Map<Character, Integer> map = new HashMap<>();
 
         for(char c : pattern.toCharArray()) {
            map.put(c, map.getOrDefault(c, 0)+1);
