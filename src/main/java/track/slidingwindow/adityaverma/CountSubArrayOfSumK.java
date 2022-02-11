@@ -10,12 +10,12 @@ public class CountSubArrayOfSumK {
         int[] arr = {3, 4, 7, 2, -3, 1, 4, 2};
         int k = 7;
 
-        int count = countSubArrayOfSumK(arr, k);
+        int count = largestSubArrayOfSumK(arr, k);
         System.out.printf("Count of sub-arrays of count %d is %d.\n", k, count);
 
     }
 
-    private static int countSubArrayOfSumK(int[] arr, int k) {
+    private static int largestSubArrayOfSumK(int[] arr, int k) {
 
         Map<Integer, Integer> map = new HashMap<>();
         int j = 0, n = arr.length, sum = 0, count = 0;
@@ -26,7 +26,7 @@ public class CountSubArrayOfSumK {
 
             if(sum == k) {
                 count++;
-            } else if(sum > k) {
+            } else if(sum != k) {
                 if(map.containsKey(sum-k)) {
                     count++;
                 }
