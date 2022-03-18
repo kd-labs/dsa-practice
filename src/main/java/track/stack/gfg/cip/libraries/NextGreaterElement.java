@@ -1,5 +1,7 @@
 package track.stack.gfg.cip.libraries;
 
+import java.util.ArrayDeque;
+
 public class NextGreaterElement {
 
     public static void main(String[] args) {
@@ -8,6 +10,12 @@ public class NextGreaterElement {
         int [] bruteRes = nextGreaterElementBrute(ip);
         for (int bruteRe : bruteRes) {
             System.out.print( bruteRe + " ");
+        }
+        System.out.println();
+
+        int [] stackRes = nextGreaterElementStack(ip);
+        for (int stackRe : stackRes) {
+            System.out.print( stackRe + " ");
         }
     }
 
@@ -28,6 +36,26 @@ public class NextGreaterElement {
             }
         }
 
+        return res;
+    }
+
+    private static int[] nextGreaterElementStack(int[] ip) {
+        int length = ip.length;
+        int[] res = new int[length];
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+
+        for(int i = length-1 ; i >= 0 ; i-- ) {
+            if(stack.isEmpty()) {
+                stack.push(ip[i]);
+                res[i] = -1;
+            } else {
+                while(ip[i] > stack.peek()) {
+                   stack.pop();
+                }
+                res[i] = stack.peek();
+                stack.push(ip[i]);
+            }
+        }
         return res;
     }
 }
