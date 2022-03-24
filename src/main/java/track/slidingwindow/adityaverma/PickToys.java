@@ -7,7 +7,7 @@ public class PickToys {
 
     public static void main(String[] args) {
 
-        String str = "abaccab";
+        String str = "33312112334";
         int k = 2;
         int res = longestSubArray(str, k);
 
