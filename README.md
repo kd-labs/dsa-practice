@@ -10,3 +10,4 @@ LeetCode Solutions
 | 1358  | [Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CountSubstringContainingAtLeastCharacters.java) |
 | 424  | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestRepeatingCharacterReplacement.java) |
 | 930  | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/BinarySubarraysWithSum.java) |
+| 1248  | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CountNiceSubArrays.java) |
