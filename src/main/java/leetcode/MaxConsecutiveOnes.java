@@ -6,20 +6,43 @@ public class MaxConsecutiveOnes {
 //        int[] nums = {1,1,1,0,0,0,1,1,1,1,0};
 //        int k = 2;
 
-//        int[] nums = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
-//        int k = 3;
+        int[] nums = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+        int k = 3;
 
 //        int[] nums = {0,0,0,0};
 //        int k = 0;
 //        int[] nums = {0,0,0,0};
 //        int k = 4;
-        int[] nums = {1,1,1,1};
-        int k = 0;
+//        int[] nums = {1,1,1,1};
+//        int k = 0;
 
 
 //        int res = maxConsecutiveOnesBrute(nums, k);
-        int res = maxConsecutiveOnesOptimized(nums, k);
+//        int res = maxConsecutiveOnesOptimized(nums, k);
+        int res = maxConsecutiveOnesMoreOptimized(nums, k);
         System.out.println(res);
+    }
+
+    private static int maxConsecutiveOnesMoreOptimized(int[] nums, int k) {
+        int j = 0, res=0, n = nums.length, i=0;
+
+        while (j < n) {
+
+            if(nums[j] == 0) k--;
+
+            while (k < 0) {
+
+                if(nums[i] == 0) {
+                    k++;
+                }
+                i++;
+            }
+
+            res = Math.max(res, j+1-i);
+
+            j++;
+        }
+        return res;
     }
 
     private static int maxConsecutiveOnesOptimized(int[] nums, int k) {
