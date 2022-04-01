@@ -11,12 +11,45 @@ public class MaxConsecutiveOnes {
 
 //        int[] nums = {0,0,0,0};
 //        int k = 0;
-        int[] nums = {0,0,0,0};
-        int k = 4;
+//        int[] nums = {0,0,0,0};
+//        int k = 4;
+        int[] nums = {1,1,1,1};
+        int k = 0;
 
 
-        int res = maxConsecutiveOnesBrute(nums, k);
+//        int res = maxConsecutiveOnesBrute(nums, k);
+        int res = maxConsecutiveOnesOptimized(nums, k);
         System.out.println(res);
+    }
+
+    private static int maxConsecutiveOnesOptimized(int[] nums, int k) {
+        int res = 0;
+        int n=nums.length, i=0,j = 0;
+
+        while(j < n) {
+
+            if(nums[j] == 1) {
+                res = Math.max(res, j+1-i);
+                j++;
+            } else if(nums[j] == 0 ) {
+                if(k > 0) {
+                    res = Math.max(res, j+1-i);
+                    k--;
+                    j++;
+                } else {
+                    while(k <= 0) {
+                        if(nums[i] == 0) {
+                            k++;
+                        }
+                        i++;
+                    }
+                }
+            }
+
+        }
+
+
+        return res;
     }
 
     private static int maxConsecutiveOnesBrute(int[] nums, int k) {
