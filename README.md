@@ -11,3 +11,4 @@ LeetCode Solutions
 | 424  | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestRepeatingCharacterReplacement.java) |
 | 930  | [Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/BinarySubarraysWithSum.java) |
 | 1248  | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CountNiceSubArrays.java) |
+| 1234  | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/SubstringForBalancedString.java) |
