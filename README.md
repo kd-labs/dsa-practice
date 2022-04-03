@@ -13,4 +13,15 @@ LeetCode Solutions
 | 1248  | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CountNiceSubArrays.java) |
 | 1234  | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/SubstringForBalancedString.java) |
 | 1004  | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/MaxConsecutiveOnes.java) |
+
+## Arrays
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
 | 23  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/RemoveDuplicatesFromSortedArray.java) |
+
+Grokking Interview Pattern Solutions
+========
+## Sliding Window
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 239  | [Longest Substring with maximum K Distinct Characters](https://www.educative.io/courses/grokking-the-coding-interview/YQQwQMWLx80#Problem-Statement) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/SlidingWindowMaximum.java) |
