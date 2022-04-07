@@ -3,38 +3,39 @@ package codingblocks.lec3.patterns;
 import java.util.Scanner;
 
 /*
-Pattern 2:
- *
- * *
- * * *
- * * * *
+Pattern 1 :
+ * * * * *
+ * * * * *
+ * * * * *
+ * * * * *
  * * * * *
  */
+
 public class Pattern1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int stars = sc.nextInt();
 
-        int n = sc.nextInt();
-
-        printPattern(n);
+        pattern0(stars);
     }
 
-    private static void printPattern(int n) {
+    private static void pattern0(int stars) {
         int row = 1;
-        int star = 1;
 
-        while (row <= n) {
+        while (row <= stars) {
 
-            int j = 1;
-            while (j <= star) {
+            int star = 1;
+            while (star <= stars) {
+
                 System.out.print("* ");
-                j++;
+
+                star++;
             }
 
             System.out.println();
-            star++;
             row++;
         }
+
     }
 }

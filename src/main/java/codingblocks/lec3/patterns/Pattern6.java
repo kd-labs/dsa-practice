@@ -3,15 +3,17 @@ package codingblocks.lec3.patterns;
 import java.util.Scanner;
 
 /*
-Pattern 5:
+Pattern 6:
  * * * * *
- * * * *
- * * *
- * *
- *
+     * * * *
+          * * *
+              * *
+                  *
  */
-public class Pattern5 {
+public class Pattern6 {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
@@ -20,30 +22,29 @@ public class Pattern5 {
     }
 
     private static void printPattern(int n) {
-
         int row = 1;
         int stars = n;
         int spaces = 0;
 
-        while (row <= n) {
+        while(row <= n) {
 
-            int star = 1;
             int space = 0;
+            int star = 1;
 
             while(space < spaces) {
                 System.out.print("  ");
                 space++;
             }
 
-            while (star <= stars) {
+            while(star <= stars) {
                 System.out.print("* ");
                 star++;
             }
 
-            row++;
-            spaces++;
-            stars--;
             System.out.println();
+            row++;
+            spaces += 2;
+            stars--;
         }
     }
 }
