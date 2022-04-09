@@ -18,7 +18,46 @@ public class Pattern18 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        printPattern(n);
+//        printPattern(n);
+        printPatternOptimized(n);
+    }
+
+    private static void printPatternOptimized(int n) {
+        int rows = n;
+        int row = 1;
+        int spaces = n/2;
+        int stars = 1;
+
+        while (row <= rows) {
+
+            int space = 1;
+            while (space <= spaces) {
+                System.out.print("\t");
+                space++;
+            }
+
+            int star = 1;
+            while(star <= stars) {
+                System.out.print("*\t");
+                star++;
+            }
+
+            space = 1;
+            while (space <= spaces) {
+                System.out.print("\t");
+                space++;
+            }
+
+            if(row <= n/2) {
+                spaces -= 1;
+                stars += 2;
+            } else {
+                spaces += 1;
+                stars -= 2;
+            }
+            System.out.println();
+            row++;
+        }
     }
 
     private static void printPattern(int n) {
