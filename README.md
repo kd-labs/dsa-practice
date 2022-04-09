@@ -13,6 +13,7 @@ LeetCode Solutions
 | 1248  | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CountNiceSubArrays.java) |
 | 1234  | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/SubstringForBalancedString.java) |
 | 1004  | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/MaxConsecutiveOnes.java) |
+| 1208  | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GetEqualSubstringsWithinBudget.java) |
 
 ## Arrays
 | # | Title | Difficulty | Complexity | Solution |
