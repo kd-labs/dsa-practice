@@ -2,6 +2,18 @@ package codingblocks.lec3.patterns;
 
 import java.util.Scanner;
 
+/*
+Pattern 15 :
+ * * * * *
+     * * * *
+         * * *
+             * *
+                 *
+             * *
+         * * *
+     * * * *
+ * * * * *
+ */
 public class Pattern15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
