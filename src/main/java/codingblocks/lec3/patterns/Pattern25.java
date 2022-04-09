@@ -32,17 +32,17 @@ public class Pattern25 {
             int num = 1;
 
             while (space <= (spaces/2)) {
-                System.out.print("  ");
+                System.out.print("\t");
                 space++;
             }
 
             while (num <= nums) {
-                System.out.print(counter++ + " ");
+                System.out.print(counter++ + "\t");
                 num++;
             }
 
             while(space <= spaces) {
-                System.out.print("  ");
+                System.out.print("\t");
                 space++;
             }
 
