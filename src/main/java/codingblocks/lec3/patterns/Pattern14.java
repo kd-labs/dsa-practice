@@ -46,15 +46,15 @@ public class Pattern14 {
             }
 
             System.out.println();
-            row++;
 
-            if (row <= n) {
+            if (row < n) {
                 spaces--;
                 stars++;
             } else {
                 spaces++;
                 stars--;
             }
+            row++;
         }
     }
 }
