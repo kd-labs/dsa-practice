@@ -2,6 +2,14 @@ package codingblocks.lec3.patterns;
 
 import java.util.Scanner;
 
+/*
+Pattern 19:
+ *	*	*	*	*
+ *	*		*	*
+ *				*
+ *	*		*	*
+ *	*	*	*	*
+ */
 public class Pattern19 {
 
     public static void main(String[] args) {
