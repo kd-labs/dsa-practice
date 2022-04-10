@@ -14,6 +14,7 @@ LeetCode Solutions
 | 1234  | [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/SubstringForBalancedString.java) |
 | 1004  | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/MaxConsecutiveOnes.java) |
 | 1208  | [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GetEqualSubstringsWithinBudget.java) |
+| 30  | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/leetcode/SubstringWithConcatenationOfAllWords.java) |
 
 ## Arrays
 | # | Title | Difficulty | Complexity | Solution |
