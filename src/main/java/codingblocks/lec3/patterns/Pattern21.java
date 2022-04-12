@@ -31,17 +31,17 @@ public class Pattern21 {
             int space = 1;
 
             while (star <= (stars/2)) {
-                System.out.print("* ");
+                System.out.print("*\t");
                 star++;
             }
 
             while(space <= spaces) {
-                System.out.print("  ");
+                System.out.print("\t");
                 space++;
             }
 
             while (star <= stars) {
-                System.out.print("* ");
+                System.out.print("*\t");
                 star++;
             }
 
