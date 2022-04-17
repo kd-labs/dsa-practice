@@ -16,9 +16,9 @@ public class InverseNumber {
         int res = 0;
 
         for(int i = 1; n > 0; n = n/10, i++) {
-            res += i * Math.pow(10, n%10);
+            res += i * Math.pow(10, n%10-1);
         }
 
-        return res/10;
+        return res;
     }
 }
