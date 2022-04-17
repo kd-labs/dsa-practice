@@ -25,37 +25,45 @@ public class DoubleSidedArrow {
         int rows = n;
         int row = 1;
         int outerSpaces = n-1;
-        int nos = 1;
-        int innerSpaces = -1;
+        int nos = 0;
+        int innerSpaces = 1;
+        int val = row;
 
         while ( row <= rows) {
 
+            // print outer space left
             int outerSpace = 1;
             while(outerSpace <= outerSpaces) {
                 System.out.print("\t");
                 outerSpace++;
             }
 
+            // print numbers left
             int no = 1;
-            int val = row;
             while(no <= nos) {
                 System.out.print(val-- + "\t");
                 no++;
             }
 
+            // print inner space
             int innerSpace = 1;
             while(innerSpace <= innerSpaces) {
-                System.out.print("\t");
+                if(innerSpace == 1 || innerSpace == innerSpaces) {
+                    System.out.print(1+"\t");
+                } else {
+                    System.out.print("\t");
+                }
                 innerSpace++;
             }
 
+            // print numbers right
             no = 1;
-            val=1;
-            while((row != 1 || row != n) && no <= nos) {
-                System.out.print(val++ + "\t");
+            while(no <= nos) {
+                System.out.print(++val + "\t");
                 no++;
             }
 
+            // print outer space right
             outerSpace = 1;
             while(outerSpace <= outerSpaces) {
                 System.out.print("\t");
@@ -66,10 +74,12 @@ public class DoubleSidedArrow {
                 outerSpaces -= 2;
                 innerSpaces += 2;
                 nos++;
+                val++;
             } else {
                 outerSpaces += 2;
                 innerSpaces -= 2;
                 nos--;
+                val--;
             }
             System.out.println();
             row++;

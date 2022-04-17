@@ -14,9 +14,9 @@ public class Fibonacci {
 
     private static int getNFibonacci(int n) {
 
-        int i = 0, a = 0, b = 1, c;
+        int i = 0, a = 0, b = 1, c=0;
 
-        while (i < n-2) {
+        while (i <= n-2) {
            c = a+b;
            a = b;
            b = c;
@@ -24,6 +24,6 @@ public class Fibonacci {
            i++;
         }
 
-        return a;
+        return b;
     }
 }
