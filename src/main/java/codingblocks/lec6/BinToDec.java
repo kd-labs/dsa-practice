@@ -6,10 +6,13 @@ public class BinToDec {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int bin = sc.nextInt();
+        int tcs = sc.nextInt();
 
-        int dec = binToDec(bin);
-        System.out.println(dec);
+        while(tcs-- != 0) {
+            int bin = sc.nextInt();
+            int dec = binToDec(bin);
+            System.out.println(dec);
+        }
     }
 
     private static int binToDec(int bin) {
