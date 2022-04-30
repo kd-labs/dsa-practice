@@ -4,9 +4,9 @@ public class ArrayRotate {
 
     private static void rotateArr(int arr[], int d, int n)
     {
+        reverse(arr, 0, arr.length-1);
         reverse(arr, 0, d-1);
         reverse(arr, d, arr.length-1);
-        reverse(arr, 0, arr.length-1);
     }
 
     private static void reverse(int[] arr, int start, int end) {
@@ -21,18 +21,34 @@ public class ArrayRotate {
 
     public static void main(String[] args) {
 
-        int arr1[] = {1,2,3,4,5};
-        rotateArr(arr1, 2, 5);
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.printf("%d ", arr1[i]);
+//        int arr1[] = {1,2,3,4,5};
+//        rotateArr(arr1, 2, 5);
+//        for (int i = 0; i < arr1.length; i++) {
+//            System.out.printf("%d ", arr1[i]);
+//        }
+//
+//        System.out.println();
+//
+//        int arr2[] = {2,4,6,8,10,12,14,16,18,20};
+//        rotateArr(arr2, 3, 10);
+//        for (int i = 0; i < arr2.length; i++) {
+//            System.out.printf("%d ", arr2[i]);
+//        }
+
+         int[] nums = {1,2,3,4,5,6,7};
+         int k = 3;
+        rotateArr(nums, k, nums.length);
+        for (int i = 0; i < nums.length; i++) {
+            System.out.printf("%d ", nums[i]);
         }
 
-        System.out.println();
+//        int[] nums = {-1,-100,3,99};
+//        int k = 2;
+//        rotateArr(nums, k, nums.length);
+//        for (int i = 0; i < nums.length; i++) {
+//            System.out.printf("%d ", nums[i]);
+//        }
 
-        int arr2[] = {2,4,6,8,10,12,14,16,18,20};
-        rotateArr(arr2, 3, 10);
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.printf("%d ", arr2[i]);
-        }
+
     }
 }
