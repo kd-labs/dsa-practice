@@ -27,6 +27,7 @@ LeetCode Solutions
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
 | 167| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/TwoSumII.java) |
+| 844| [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Time - O(n) <br> Space - O(n)| Easy | [Java](./src/main/java/leetcode/BackspaceStringCompare.java) |
 
 Grokking Interview Pattern Solutions
 ========
