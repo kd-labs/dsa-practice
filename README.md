@@ -21,7 +21,8 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 23  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/RemoveDuplicatesFromSortedArray.java) |
 | 1769 | [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/MinimumNumberOfOperationsToMoveAllBallsToEachBox.java) |
-| 189| [Rotate Array](https://leetcode.com/problems/rotate-array/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/RotateArray.java) |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/RotateArray.java) |
+| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ProductOfArrayExceptSelf.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
