@@ -23,6 +23,7 @@ LeetCode Solutions
 | 1769 | [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/MinimumNumberOfOperationsToMoveAllBallsToEachBox.java) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/RotateArray.java) |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ProductOfArrayExceptSelf.java) |
+| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Time - O(n) <br> Space - O(n)| Hard | [Java](./src/main/java/leetcode/TrappingRainWater.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
