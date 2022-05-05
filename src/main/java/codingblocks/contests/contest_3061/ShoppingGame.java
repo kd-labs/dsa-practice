@@ -11,26 +11,29 @@ public class ShoppingGame {
         while(tcs-- != 0) {
             int ayush = sc.nextInt();
             int harshit = sc.nextInt();
-            whoWins(ayush, harshit);
+
+            winner(ayush, harshit);
         }
     }
 
-    private static void whoWins(int ayush, int harshit) {
+    private static void winner(int ayush, int harshit) {
 
         int i = 1;
         while (true) {
-
-            if((i & 1) == 1) {
+            if(i % 2 == 1) {
+                // deduct from ayush
                 ayush -= i;
             } else {
+                // deduct from harshit
                 harshit -= i;
             }
 
-            if(ayush < 0) {
+            // check if ayush is in -ve
+            if(ayush <= 0) {
                 System.out.println("Harshit");
                 break;
-            } else if(harshit < 0) {
-                System.out.println("Ayush");
+            } else if(harshit <= 0) {
+                System.out.println("Aayush");
                 break;
             }
 
