@@ -12,21 +12,19 @@ public class TargetSumPairs {
         int[] arr = new int[arrSize];
         int i = 0 ;
         while(i < arrSize) {
-            arr[i] = sc.nextInt();
-            i++;
+            arr[i++] = sc.nextInt();
         }
         int target = sc.nextInt();
         targetPair(arr, arrSize, target);
     }
 
-    // TODO : Incomplete
     private static void targetPair(int[] arr, int arrSize, int target) {
         Arrays.sort(arr);
         int start = 0, end = arrSize-1;
         while (start < end) {
            if(arr[start] + arr[end] == target) {
-               System.out.println(start + " and " + end);
-               end--;start++;
+               System.out.println(arr[start ]+ " and " + arr[end]);
+               end--;
            } else if(arr[start] + arr[end] > target) end--;
            else start++;
         }
