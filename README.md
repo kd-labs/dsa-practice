@@ -25,6 +25,7 @@ LeetCode Solutions
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ProductOfArrayExceptSelf.java) |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Time - O(n) <br> Space - O(n)| Hard | [Java](./src/main/java/leetcode/TrappingRainWater.java) |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MaximumSubarray.java) |
+| 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GasStation.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
