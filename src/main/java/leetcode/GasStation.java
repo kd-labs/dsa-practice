@@ -1,5 +1,6 @@
 package leetcode;
 
+// TODO : Write the story
 public class GasStation {
 
     private static int canCompleteCircuit(int[] gas, int[] cost) {
@@ -11,8 +12,8 @@ public class GasStation {
             total += (gas[i] - cost[i]);
             curFuel += gas[i] - cost[i];
             if(curFuel < 0) {
+                curFuel = 0;
                startIndex = i + 1;
-               curFuel = 0;
             }
         }
 
