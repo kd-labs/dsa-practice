@@ -33,6 +33,11 @@ LeetCode Solutions
 | 167| [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/TwoSumII.java) |
 | 844| [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Time - O(n) <br> Space - O(n)| Easy | [Java](./src/main/java/leetcode/BackspaceStringCompare.java) |
 
+## Binary Search
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 278 |[First Bad Version](https://leetcode.com/problems/first-bad-version/) | Time - O(log(n)) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/FirstBadVersion.java) |
+
 Grokking Interview Pattern Solutions
 ========
 ## Sliding Window
