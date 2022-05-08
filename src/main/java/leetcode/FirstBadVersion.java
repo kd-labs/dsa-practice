@@ -19,7 +19,6 @@ public class FirstBadVersion {
                 l = mid+1;
             }
         }
-
         return l;
     }
 }
