@@ -7,12 +7,13 @@ public class FirstBadVersion {
     }
 
     private static int firstBadVersion(int n) {
-        int l = 0, h = n-1;
+        int l = 1, h = n;
 
         int res = -1, mid;
         while(l < h) {
             mid = l + (h-l)/2;
             if(isBadVersion(mid)) {
+                res = mid;
                 h = mid;
             } else {
                 l = mid+1;
