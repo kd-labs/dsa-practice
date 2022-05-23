@@ -14,20 +14,35 @@ public class InsertionSort {
 
     }
 
-    private static void insertionSort(int[] nums) {
+    private static void insertionSort(int[] arr){
+        int len = arr.length, value, hole, ptr;
 
-        int item, j;
-        for(int i = 1 ; i < nums.length ; i++) {
-
-            item = nums[i];
-            j = i - 1;
-
-            while(j >= 0 && nums[j] > item) {
-                nums[j+1] = nums[j];
-                j--;
+        for(int i = 1 ; i < len ; i++) {
+            value = arr[i];
+            ptr = i-1;
+            hole=i;
+            while(ptr >= 0 && arr[ptr] > value) {
+                arr[ptr+1] = arr[ptr];
+                hole--;
+                ptr--;
             }
-            nums[++j] = item;
+            arr[hole] = value;
         }
-
     }
+
+//    private static void insertionSort(int[] nums) {
+//
+//        int item, j;
+//        for(int i = 1 ; i < nums.length ; i++) {
+//
+//            item = nums[i];
+//            j = i - 1;
+//
+//            while(j >= 0 && nums[j] > item) {
+//                nums[j+1] = nums[j];
+//                j--;
+//            }
+//            nums[++j] = item;
+//        }
+//    }
 }

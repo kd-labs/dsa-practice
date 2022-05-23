@@ -14,7 +14,12 @@ public class Helper {
             }
             System.out.println();
         }
+    }
 
+    public static void swap(int[][] matrix, int i, int j) {
+        int temp = matrix[i][j];
+        matrix[i][j] = matrix[j][i];
+        matrix[j][i] = temp;
     }
 
     public static long factorial(int n) {
