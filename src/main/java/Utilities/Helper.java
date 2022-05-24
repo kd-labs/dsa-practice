@@ -41,4 +41,10 @@ public class Helper {
             right--;
         }
     }
+
+    public static void printArray(int[] res) {
+        for(int e : res) {
+            System.out.print(e + " ");
+        }
+    }
 }
