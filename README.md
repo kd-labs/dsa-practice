@@ -27,6 +27,7 @@ LeetCode Solutions
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MaximumSubarray.java) |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GasStation.java) |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/IntersectionOfTwoArrays.java) |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MergeSortedArray.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
