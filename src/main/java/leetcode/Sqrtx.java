@@ -1,13 +1,14 @@
-package codingblocks.contests.contest_3061;
+package leetcode;
 
 import java.util.Scanner;
 
-public class SquareRoot {
+public class Sqrtx {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        long a = sc.nextInt();
+        int a = sc.nextInt();
 
-        long res = squareRoot(a);
+        int res = mySqrt(a);
         System.out.println(res);
     }
 
@@ -17,9 +18,9 @@ public class SquareRoot {
             if yes, then return mid immediately
             else, if mid^2 < target, them mid might be a probable ans and store it
      */
-    private static long squareRoot(long a) {
+    private static int mySqrt(int a) {
         if(a == 0 || a == 1) return a;
-        long lo = 1, hi = a/2, mid, res=0;
+        int lo = 1, hi = a/2, mid, res=0;
         while(lo <= hi) {
             mid = lo + (hi-lo)/2;
             if(Math.pow(mid, 2) == a) return mid;
@@ -33,4 +34,5 @@ public class SquareRoot {
 
         return res;
     }
+
 }

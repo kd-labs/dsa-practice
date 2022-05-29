@@ -44,6 +44,7 @@ LeetCode Solutions
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Time - O(log(n)) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/FirstBadVersion.java) |
 | 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Time - O(log(n)) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/SearchIn2D.java) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Time - O(log(n)) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/SearchInsertPosition.java) |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Time - O(log(n)) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/Sqrtx.java) |
 
 Grokking Interview Pattern Solutions
 ========
