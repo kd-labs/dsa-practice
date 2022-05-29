@@ -1,4 +1,4 @@
-package codingblocks.dailycodebytes;
+package codingblocks.dailycodebyte;
 
 import java.util.Scanner;
 

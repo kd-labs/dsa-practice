@@ -15,7 +15,7 @@ public class CountPalindromicSubstrings {
     private static int countPalindromicSubstrings(String str) {
         int count = 0;
         for(int i = 0 ; i < str.length() ; i++) {
-            for(int j = 0 ; j < str.length() ; j++) {
+            for(int j = 0 ; j <= str.length() ; j++) {
                 if(isPalindrome(str, i, j)) count++;
             }
         }
@@ -25,7 +25,7 @@ public class CountPalindromicSubstrings {
 
     private static boolean isPalindrome(String str, int i, int j) {
         int start = i, end = j;
-        while (start <= end) {
+        while (start < end) {
             if(str.charAt(start) != str.charAt(end)) return false;
         }
          return true;
