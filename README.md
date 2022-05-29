@@ -29,6 +29,7 @@ LeetCode Solutions
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GasStation.java) |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/IntersectionOfTwoArrays.java) |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MergeSortedArray.java) |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/RemoveDuplicatesFromSortedArray.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
