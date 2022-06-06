@@ -34,6 +34,7 @@ LeetCode Solutions
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MissingNumber.java) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/ContainsDuplicate.java) |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MoveZeroes.java) |
+| 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/FindTheDuplicateNumber.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
