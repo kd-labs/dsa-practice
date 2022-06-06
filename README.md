@@ -32,6 +32,8 @@ LeetCode Solutions
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/RemoveDuplicatesFromSortedArray.java) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MajorityElement.java) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MissingNumber.java) |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/ContainsDuplicate.java) |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/MoveZeroes.java) |
 
 ## 2 Pointers
 | # | Title | Difficulty | Complexity | Solution |
