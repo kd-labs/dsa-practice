@@ -16,13 +16,15 @@ public class DiagonalTraversal2D {
             }
         }
 
-        List<List<Integer>> diagonal = getDiagonals(matrix);
+//        List<List<Integer>> diagonal = getDiagonals(matrix);
+        getDiagonalV2(matrix);
 
         /*
             if the inner list is odd then print in order
             if the inner list is even then print in reverse
          */
 
+        /*
         for (int j = 0; j < diagonal.size(); j++) {
             List<Integer> integers = diagonal.get(j);
             if(j % 2 == 0) {
@@ -37,6 +39,7 @@ public class DiagonalTraversal2D {
                 }
             }
         }
+         */
     }
 
     private static List<List<Integer>> getDiagonals(int[][] matrix) {
@@ -65,5 +68,44 @@ public class DiagonalTraversal2D {
             res.add(diagonal);
         }
         return res;
+    }
+
+    /*
+        Approach taught by Monu bhaiya
+     */
+    private static void getDiagonalV2(int[][] matrix) {
+
+        /*
+            Total number of diagonal in m rows x n cols matrix = m+n-1
+         */
+
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int diagonals = m+n-1;
+
+        for(int d = 0 ; d < diagonals ; d++) {
+
+            if(d < n) {
+                int row = 0, col = d; // setting row as 0 for d < n and col = diagnol
+                while(row < m && col >= 0) {
+                    System.out.print(matrix[row][col] + " ");
+                    row++;
+                    col--;
+                }
+                System.out.println();
+            } else {
+
+                // setting col as last col i.e. n-1 and row = d+n-1 for d > n, mtlb jab d n ke barabar ho jayega
+                // fir observation se row nikalne ka formula d-n+1 banta hai
+                int col = n-1 ,row = d-n+1;
+                while(row < m && col >= 0) {
+                    System.out.print(matrix[row][col] + " ");
+                    row++;
+                    col--;
+                }
+                System.out.println();
+            }
+        }
+
     }
 }
