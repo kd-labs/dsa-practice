@@ -1,6 +1,11 @@
 LeetCode Solutions
 ========
 
+## Recursion
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/submissions/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/PalindromePartitioning.java) |
+
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
