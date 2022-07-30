@@ -6,6 +6,11 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/submissions/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/PalindromePartitioning.java) |
 
+## BackTracking
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 51  | [N-Queens](https://leetcode.com/problems/n-queens/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
+
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
