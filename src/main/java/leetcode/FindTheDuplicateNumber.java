@@ -9,9 +9,11 @@ public class FindTheDuplicateNumber {
 //        int[] nums = {3,1,3,4,2};
         int[] nums = {1,3,4,2,2};
 
+//        int res = duplicateNum(nums);
+        int res = duplicateNumUsingSlowFast(nums);
 //        int res = duplicateNumUsingSet(nums);
-        int res = duplicateNumUsingBinarySearch(nums);
-        System.out.println(res);
+//        int res = duplicateNumUsingBinarySearch(nums);
+//        System.out.println(res);
     }
 
     /*
@@ -66,6 +68,33 @@ public class FindTheDuplicateNumber {
             map.add(num);
         }
         return -1;
+    }
+
+    /**
+     *      Idea : Converting array to linked list will represent in linked list with loop in it.
+     */
+    private static int duplicateNumUsingSlowFast(int[] nums) {
+        int slow = 0, fast = 0;
+
+        /**
+         * This do while loop will make the slow and fast pointers point to the end of the loop
+         */
+        do{
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while(slow != fast);
+
+        /**
+         * This loop will reset the slow pointer and move the slow and fast pointer one step until they
+         * meet at the duplicate element
+         */
+        slow = 0;
+        while(slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        return slow;
     }
 
 }
