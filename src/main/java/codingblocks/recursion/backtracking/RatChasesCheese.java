@@ -12,7 +12,7 @@ public class RatChasesCheese {
     private static void printAllPath(int[][] arr, int cr, int cc) {
 
         // board boundary case
-        if(cc < 0 || cc >= arr[0].length || cr < 0 || cr >= arr.length || arr[cr][cc] == 1 ) {
+        if(cc < 0 || cc >= arr[0].length || cr < 0 || cr >= arr.length || arr[cr][cc] == 1  || arr[cr][cc] == 'X') {
             return;
         }
 
@@ -31,11 +31,18 @@ public class RatChasesCheese {
             System.out.println("********************************");
         }
 
+        // Direction Matrix
+        int[] r = {1, 0, -1, 0};
+        int[] c = {0, 1, 0, -1};
+
         arr[cr][cc] = 1;
-        printAllPath(arr, cr+1, cc);
-        printAllPath(arr, cr, cc+1);
-        printAllPath(arr, cr-1, cc);
-        printAllPath(arr, cr, cc-1);
+        for(int i = 0 ; i < 4 ; i++) {
+            // Recursive Case
+            printAllPath(arr, cr+r[i], cc+c[i]);
+        }
+//        printAllPath(arr, cr, cc+1);
+//        printAllPath(arr, cr-1, cc);
+//        printAllPath(arr, cr, cc-1);
         arr[cr][cc] = 0;
 
     }

@@ -1,4 +1,4 @@
-package codingblocks.recursion;
+package codingblocks.recursion.backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
