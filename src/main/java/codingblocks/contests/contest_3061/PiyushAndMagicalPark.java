@@ -20,8 +20,12 @@ public class PiyushAndMagicalPark {
         }
 
         int strength = walkInThePark(park, k, s);
-        System.out.println(strength > k ? "Yes" : "No");
-        System.out.println(strength);
+        if(strength > k) {
+            System.out.println("Yes");
+            System.out.println(strength);
+        } else {
+            System.out.println("No");
+        }
 
     }
 
@@ -32,6 +36,8 @@ public class PiyushAndMagicalPark {
 
         for(int i = 0 ; i < rows ; i++) {
             for(int m = 0 ; m < cols && s > k ; m++, s--) {
+
+                if(m == cols-1) s++;
 
                 // if cell has '.', -2 from s
                 if(park[i][m].equals(".")) {
