@@ -13,16 +13,13 @@ public class LexicographicalPrint {
 
     private static void lexicagraphicalPrint(int max, String num) {
 
-        // Negative Base Case : If num is greater than max, then return
-        if(Integer.parseInt(num) == 0) {
-            System.out.println(num);
+        // Edge Base Case : if number is 0 then return
+        if(Integer.parseInt(num) == 0 || Integer.parseInt(num) > max) {
             return;
         }
-        if(Integer.parseInt(num) > max) {
-            return;
-        } else {
-            System.out.println(num);
-        }
+
+        // print the number which will print in lexicographical order
+        System.out.println(num);
 
         for(int i = 0 ; i <= 9 ; i++){
             lexicagraphicalPrint(max, num + i);
@@ -34,7 +31,7 @@ public class LexicographicalPrint {
        if(curr > max) {
            return;
        }
-        System.out.println(curr);
+       System.out.println(curr);
 
        int i = 0;
        if(curr == 0) {
