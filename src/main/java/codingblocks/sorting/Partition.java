@@ -1,5 +1,7 @@
 package codingblocks.sorting;
 
+import java.util.Random;
+
 public class Partition {
 
     public static void main(String[] args) {
@@ -10,7 +12,21 @@ public class Partition {
 
     }
 
+    private static void random(int[] arr, int lo, int hi) {
+
+        Random random = new Random();
+        int idx = random.nextInt(hi - lo + 1) + lo;
+        int temp = arr[idx];
+        arr[idx] = arr[hi];
+        arr[hi] = temp;
+
+    }
+
      public static int partition(int[] arr, int start, int end) {
+
+        // Randomized Quick Sort
+        // Radomized selection of quick sort
+        random(arr, start, end);
 
         int pivot = arr[end];
         int pivotIdx = start;
