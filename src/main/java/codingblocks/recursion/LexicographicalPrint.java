@@ -13,12 +13,17 @@ public class LexicographicalPrint {
 
     private static void lexicagraphicalPrint(int max, String num) {
 
-        // Edge Base Case : if number is 0 then return
-        if(Integer.parseInt(num) == 0 || Integer.parseInt(num) > max) {
+        // Edge Base Case : if number is 0 then print and return
+        if(Integer.parseInt(num) == 0) {
+            System.out.println(num);
             return;
         }
 
-        // print the number which will print in lexicographical order
+        // Negative Base Case : If num is greater than max, then return
+        if(Integer.parseInt(num) > max) {
+            return;
+        }
+
         System.out.println(num);
 
         for(int i = 0 ; i <= 9 ; i++){
