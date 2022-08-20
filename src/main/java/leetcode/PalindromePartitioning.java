@@ -18,6 +18,8 @@ public class PalindromePartitioning {
 
     }
 
+    //
+    // ques = aab
     private static void printStringPartition(String ques, List<String> subList, List<List<String>> ans) {
 
         // Base Case
