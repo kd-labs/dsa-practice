@@ -19,15 +19,24 @@ public class DeepakAndPrimes {
 
     }
 
+    /*
+        Prime Sieve Algorithm
+     */
     private static void primeSieve() {
 
+        // 1. Create boolean array
         boolean[] primesArr = new boolean[100];
+
+        // 2. Fill boolean array with true value
         Arrays.fill(primesArr, true);
 
+        // 3. Initialize 0 and 1 as false i.e. nos 0 and 1 are not prime
         primesArr[0] = primesArr[1] = false;
 
+        // 4. start p = 2 and while p <= sqrt(primesArr.length) and incr p by 1
         for(int i = 2 ; i*i <= primesArr.length ; i++) {
 
+            // if primesArr is true then take that as starting point
             if(primesArr[i]) {
                 for(int k = i*i ; k < primesArr.length ; k = k + i) {
                     primesArr[k] = false;
