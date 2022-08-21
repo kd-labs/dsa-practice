@@ -45,7 +45,7 @@ public class SudokuSolver {
                     solveSudoku(grid, row, col+1);
 
                     // Backtracking undo
-                    grid[row][col] = "0";
+                    grid[row][col] = ".";
                 }
 
             }

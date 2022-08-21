@@ -11,6 +11,7 @@ public class GenerateBinaryStrings {
             String str = sc.next();
             int len = str.length();
             generateBinaryString(str, 0, len);
+            System.out.println();
         }
 
     }
