@@ -5,15 +5,15 @@ public class SudokuSolver {
     public static void main(String[] args) {
 
         String[][] grid = {
-                {"5", "3", ".", ".", "7", ".", ".", ".", "."},
-                {"6", ".", ".", "1", "9", "5", ".", ".", "."},
-                {".", "9", "8", ".", ".", ".", ".", "6", "."},
-                {"8", ".", ".", ".", "6", ".", ".", ".", "3"},
-                {"4", ".", ".", "8", ".", "3", ".", ".", "1"},
-                {"7", ".", ".", ".", "2", ".", ".", ".", "6"},
-                {".", "6", ".", ".", ".", ".", "2", "8", "."},
-                {".", ".", ".", "4", "1", "9", ".", ".", "5"},
-                {".", ".", ".", ".", "8", ".", ".", "7", "9"}
+                {"5", "3", "0", "0", "7", "0", "0", "0", "0"},
+                {"6", "0", "0", "1", "9", "5", "0", "0", "0"},
+                {"0", "9", "8", "0", "0", "0", "0", "6", "0"},
+                {"8", "0", "0", "0", "6", "0", "0", "0", "3"},
+                {"4", "0", "0", "8", "0", "3", "0", "0", "1"},
+                {"7", "0", "0", "0", "2", "0", "0", "0", "6"},
+                {"0", "6", "0", "0", "0", "0", "2", "8", "0"},
+                {"0", "0", "0", "4", "1", "9", "0", "0", "5"},
+                {"0", "0", "0", "0", "8", "0", "0", "7", "9"}
         };
 
         solveSudoku(grid, 0, 0);
@@ -26,16 +26,17 @@ public class SudokuSolver {
         if(col == grid.length) {
             row = row+1;
             col = 0;
-        } else if(row == grid.length) { // solved sudoku hence print the grid
+        }
+        if(row == grid.length) { // solved sudoku hence print the grid
 
             printGrid(grid);
             return;
         }
 
-        if(!grid[row][col].equals(".")) {
+        if(!grid[row][col].equals("0")) {
             // move to the next col
             solveSudoku(grid, row, col+1);
-        } else if(grid[row][col].equals(".")) { // solve for this cell with 9 possible recursion calls
+        } else if(grid[row][col].equals("0")) { // solve for this cell with 9 possible recursion calls
             for(int i = 1 ; i <= grid.length ; i++) {
 
                 if(isSafe(grid, row, col, i)) {
