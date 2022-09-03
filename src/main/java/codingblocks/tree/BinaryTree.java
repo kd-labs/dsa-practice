@@ -96,4 +96,18 @@ public class BinaryTree {
 
     }
 
+    public int getSize() {
+        return getSize(this.head);
+    }
+
+    private static int getSize(Node ptr) {
+
+        // Base Case
+        if(ptr == null) return 0;
+
+        int left = getSize(ptr.left);
+        int right = getSize(ptr.right);
+        return 1 + left + right;
+    }
+
 }
