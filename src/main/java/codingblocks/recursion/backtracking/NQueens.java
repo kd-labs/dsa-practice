@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class NQueens {
 
+    private static int res = 0;
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -15,6 +17,7 @@ public class NQueens {
         }
 
         nQueens(board, 0, n);
+        System.out.println(res);
 
     }
 
@@ -23,7 +26,8 @@ public class NQueens {
         // Base Condition
         if(n == 0) {
             // print board config
-            printBoard(board);
+//            printBoard(board);
+            res++;
             return;
         }
 
