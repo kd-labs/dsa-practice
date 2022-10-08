@@ -22,6 +22,7 @@ LeetCode Solutions
 | 101  | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/SymmetricTree.java) |
 | 951  | [Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/FlipEquivalentBinaryTrees.java) |
 | 112  | [Path Sum](https://leetcode.com/problems/path-sum/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/PathSum.java) |
+| 543  | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/DiameterOfBinaryTreeOptimized.java) |
 
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |
