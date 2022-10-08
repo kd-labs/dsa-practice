@@ -16,6 +16,11 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 51  | [N-Queens](https://leetcode.com/problems/n-queens/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
 
+## Tree/BST
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 101  | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/SymmetricTree.java) |
+
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
