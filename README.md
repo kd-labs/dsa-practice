@@ -25,6 +25,7 @@ LeetCode Solutions
 | 543  | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/DiameterOfBinaryTreeOptimized.java) |
 | 701  | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/InsertIntoBST.java) |
 | 110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/BalancedBinaryTree.java) |
+| 98  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ValidateBinarySearchTree.java) |
 
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |

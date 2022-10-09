@@ -33,10 +33,15 @@ public class DiameterOfBinaryTreeOptimized {
 class DiaPair {
     int height = -1;
     int diameter = 0;
+    boolean isBalanced = true;
 
     public DiaPair(int height, int diameter) {
         this.height = height;
         this.diameter = diameter;
+    }
+
+    public DiaPair(boolean isBalanced) {
+        this.isBalanced = isBalanced;
     }
 
     public DiaPair() {}
