@@ -28,6 +28,7 @@ LeetCode Solutions
 | 98  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ValidateBinarySearchTree.java) |
 | 450  | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/DeleteNodeInABST.java) |
 | 236  | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LowestCommonAncestor.java) |
+| 105  | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ConstructBinaryTreeFromPreorderAndInorderTraversal.java) |
 
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |
