@@ -27,6 +27,7 @@ LeetCode Solutions
 | 110  | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/BalancedBinaryTree.java) |
 | 98  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/ValidateBinarySearchTree.java) |
 | 450  | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/DeleteNodeInABST.java) |
+| 236  | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LowestCommonAncestor.java) |
 
 ## Sliding Window
 | # | Title | Difficulty | Complexity | Solution |
