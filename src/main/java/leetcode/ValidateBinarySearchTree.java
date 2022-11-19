@@ -1,7 +1,5 @@
 package leetcode;
 
-import codingblocks.tree.TreeNode;
-
 public class ValidateBinarySearchTree {
 
     public boolean isValidBST(TreeNode node) {

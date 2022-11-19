@@ -1,7 +1,5 @@
 package leetcode;
 
-import codingblocks.tree.TreeNode;
-
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     public TreeNode buildTree(int[] preOrder, int[] inOrder) {

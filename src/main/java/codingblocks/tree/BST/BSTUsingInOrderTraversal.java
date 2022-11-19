@@ -1,6 +1,7 @@
 package codingblocks.tree.BST;
 
-import codingblocks.tree.TreeNode;
+
+import leetcode.TreeNode;
 
 import java.util.Scanner;
 

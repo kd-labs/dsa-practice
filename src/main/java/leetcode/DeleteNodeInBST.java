@@ -1,7 +1,5 @@
 package leetcode;
 
-import codingblocks.tree.TreeNode;
-
 public class DeleteNodeInBST {
 
     public static void main(String[] args) {

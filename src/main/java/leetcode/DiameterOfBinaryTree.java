@@ -1,7 +1,5 @@
 package leetcode;
 
-import codingblocks.tree.TreeNode;
-
 public class DiameterOfBinaryTree {
 
     public int diameterOfBinaryTree(TreeNode node) {
