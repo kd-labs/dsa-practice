@@ -7,9 +7,10 @@ public class MinHeapDriver {
 
         int[] arr = {10, 20, 30, 5, 7, 3, 2, -10};
 
-        new MinHeap();
+        MinHeap minHeapObj = new MinHeap(arr);
+        ArrayList<Integer> minHeap = minHeapObj.getMinHeap();
 
-        for(Integer i : arr) {
+        for(Integer i : minHeap) {
             System.out.print(i + "\t");
         }
     }
@@ -18,6 +19,16 @@ public class MinHeapDriver {
 class MinHeap {
 
     private ArrayList<Integer> minHeap;
+
+    public MinHeap(int[] arr) {
+
+        // initialize arraylist
+        this.minHeap = new ArrayList<>();
+        for(int i : arr) {
+            this.add(i);
+        }
+
+    }
 
     public MinHeap() {
         this.minHeap = new ArrayList<>();
