@@ -2,29 +2,37 @@ package track.heap;
 
 import java.util.ArrayList;
 
-public class Heap {
-
+public class MinHeapDriver {
     public static void main(String[] args) {
+
         int[] arr = {10, 20, 30, 5, 7, 3, 2, -10};
 
-        ArrayList<Integer> minHeap = createMinHeap(arr);
+        new MinHeap();
 
-        for(Integer i : minHeap) {
+        for(Integer i : arr) {
             System.out.print(i + "\t");
         }
     }
+}
 
-    public static ArrayList<Integer> createMinHeap(int[] arr) {
-        ArrayList<Integer> minHeap = new ArrayList();
-        for(int i : arr) {
-            minHeap.add(i);
-            upHeapify(minHeap, minHeap.size()-1);
-        }
+class MinHeap {
 
-        return minHeap;
+    private ArrayList<Integer> minHeap;
+
+    public MinHeap() {
+        this.minHeap = new ArrayList<>();
     }
 
-    public static void upHeapify(ArrayList<Integer> minHeap, int childIndex) {
+    public void add(int value) {
+        minHeap.add(value);
+        upHeapify(this.minHeap.size()-1);
+    }
+
+    public ArrayList<Integer> getMinHeap() {
+        return new ArrayList<>(this.minHeap);
+    }
+
+    public void upHeapify(int childIndex) {
 
         // calculate parent index
         int parentIndex = (childIndex-1)/2;
@@ -32,10 +40,10 @@ public class Heap {
         // compare value at parent index and child
         if(minHeap.get(parentIndex) > minHeap.get(childIndex)) {
             // swap parent and child
-            swap(minHeap, parentIndex, childIndex);
+            swap(parentIndex, childIndex);
 
             // again compare with parent by making a recursive call
-            upHeapify(minHeap, parentIndex);
+            upHeapify(parentIndex);
         } else {
             // minHeap is still intact, then return
             return; // Base Case
@@ -43,7 +51,7 @@ public class Heap {
 
     }
 
-    private static void swap(ArrayList<Integer> minHeap, int a, int b) {
+    private void swap(int a, int b) {
         int temp = minHeap.get(a);
         minHeap.set(a, minHeap.get(b));
         minHeap.set(b, temp);
