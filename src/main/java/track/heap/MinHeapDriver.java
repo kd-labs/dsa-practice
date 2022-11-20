@@ -67,15 +67,15 @@ class MinHeap {
 
     public int removeMin() {
 
-        int min = this.minHeap.get(0);
+        // swap 0th and size-1 element
+        swap(0, this.minHeap.size()-1);
 
-        // set 0th index to Integer max
-        this.minHeap.set(0, Integer.MAX_VALUE);
+        int min = this.minHeap.remove(this.minHeap.size()-1);
+        this.size--;
 
         downHeapify(0);
 
-        this.size--;
-        this.minHeap = this.minHeap.subList(0, this.size);
+//        this.minHeap = this.minHeap.subList(0, this.size);
 
         return min;
 
