@@ -16,6 +16,11 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 51  | [N-Queens](https://leetcode.com/problems/n-queens/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
 
+## Heap
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/KthLargestElement.java) |
+
 ## Tree/BST
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
