@@ -110,4 +110,20 @@ public class BinaryTree {
         return 1 + left + right;
     }
 
+    public int getHeight() {
+        return getHeight(this.head);
+    }
+
+    private static int getHeight(Node ptr) {
+
+        // Base Case
+        if(ptr == null) return -1;
+
+        int left = getHeight(ptr.left);
+        int right = getHeight(ptr.right);
+
+        return 1 + Math.max(left, right);
+
+    }
+
 }
