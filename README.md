@@ -6,6 +6,11 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/submissions/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/PalindromePartitioning.java) |
 
+## Map
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/IntersectionOfTwoArraysII.java) |
+
 ## Strings
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
