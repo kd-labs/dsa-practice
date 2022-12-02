@@ -10,6 +10,7 @@ LeetCode Solutions
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/IntersectionOfTwoArraysII.java) |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GroupAnagrams.java) |
 
 ## Strings
 | # | Title | Difficulty | Complexity | Solution |
