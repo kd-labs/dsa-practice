@@ -11,6 +11,7 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | Time - O(n) <br> Space - O(1)| Easy | [Java](./src/main/java/leetcode/IntersectionOfTwoArraysII.java) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/GroupAnagrams.java) |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestConsecutiveSequence.java) |
 
 ## Strings
 | # | Title | Difficulty | Complexity | Solution |
