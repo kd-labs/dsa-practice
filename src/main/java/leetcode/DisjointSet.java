@@ -49,7 +49,10 @@ public class DisjointSet {
                 // if node's parent is the same node, then we have reached the top of the tree and the node is representative element
                 if(node == node.parent) return node;
 
-                return find(node.parent);
+                Node re = find(node.parent);
+
+                node.parent = re; // path comprssion ; to reduce the TC to find the representative element of a vertex from O(logn) to O(1)
+                return re;
 
         }
 
