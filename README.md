@@ -6,6 +6,16 @@ LeetCode Solutions
 |---|-------|------------|------|----------|
 | 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/submissions/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/PalindromePartitioning.java) |
 
+## BackTracking
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 51  | [N-Queens](https://leetcode.com/problems/n-queens/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
+
+## Dynamic Programming
+| # | Title | Difficulty | Complexity | Solution |
+|---|-------|------------|------|----------|
+| 198  | [House Robber](https://leetcode.com/problems/house-robber/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/HouseRobber.java) |
+
 ## Map
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
@@ -17,11 +27,6 @@ LeetCode Solutions
 | # | Title | Difficulty | Complexity | Solution |
 |---|-------|------------|------|----------|
 | 647 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | | Medium | [Java](./src/main/java/codingblocks/contests/contest_3061/AxisOrbitPalindromeSubstring.java) |
-
-## BackTracking
-| # | Title | Difficulty | Complexity | Solution |
-|---|-------|------------|------|----------|
-| 51  | [N-Queens](https://leetcode.com/problems/n-queens/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
 
 ## Heap
 | # | Title | Difficulty | Complexity | Solution |
