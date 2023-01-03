@@ -51,10 +51,13 @@ public class HouseRobber {
     private int rob_tabulation(int[] arr) {
 
         int[] table = new int[arr.length];
-        table[0] = arr[0];
-        table[1] = Math.max(table[0], arr[1]);
+        table[0] = arr[0]; // setting the base case of the last house on the left i.e. arr[0]
+        table[1] = Math.max(table[0], arr[1]); // setting the base case of the second last house on left i.e. arr[1], we find the max of (robbing idx=1 house, robbing idx=0 house)
 
         for(int i = 2 ; i < table.length ; i++) {
+            // sample arr = {5, 2, 1, 11, 3}
+            // Note : we are robbing house from right i.e. {5, 2, 1, 11, 3} <----- robbing from here
+            // table[i] = Math.max(We rob idx house and get the max of robbing idx-2 house, We don't rob idx house and get the max of robbing idx-1 house)
             table[i] = Math.max(arr[i] + table[i-2], table[i-1]);
         }
 
