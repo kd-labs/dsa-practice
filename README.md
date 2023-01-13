@@ -17,6 +17,7 @@ LeetCode Solutions
 | 198  | [House Robber](https://leetcode.com/problems/house-robber/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/HouseRobber.java) |
 | 518  | [Coin Change II](https://leetcode.com/problems/coin-change-ii/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CoinChangeII.java) |
 | 115  | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/leetcode/DistinctSubsequences.java) |
+| 1143  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestCommonSubsequence.java) |
 
 ## Map
 | # | Title | Difficulty | Complexity | Solution |
