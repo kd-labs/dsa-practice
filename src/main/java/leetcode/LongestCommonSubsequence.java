@@ -9,7 +9,9 @@ public class LongestCommonSubsequence {
         LongestCommonSubsequence longestCommonSubsequence = new LongestCommonSubsequence();
 
 //        System.out.println(longestCommonSubsequence.longestCommonSubsequence("abcde", "ace"));
-        System.out.println(longestCommonSubsequence.longestCommonSubsequence("abc", "def"));
+//        System.out.println(longestCommonSubsequence.longestCommonSubsequence("abc", "def"));
+
+        System.out.println(longestCommonSubsequence.longestCommonSubsequence_Tabulation("abcde", "ace"));
 
     }
 
@@ -41,6 +43,23 @@ public class LongestCommonSubsequence {
 
         // store the res in dp and return
         return dp[idx_k][idx_v] = res;
+    }
+
+    public int longestCommonSubsequence_Tabulation(String k, String v) {
+
+        int[][] dp = new int[k.length()+1][v.length()+1];
+
+        for(int i = 1 ; i < dp.length ; i++) {
+            for(int j = 1 ; j < dp[0].length ; j++) {
+                if(k.charAt(i-1) == v.charAt(j-1)) {
+                    dp[i][j] = 1 + dp[i-1][j-1];
+                } else {
+                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                }
+            }
+        }
+
+        return dp[k.length()][v.length()];
     }
 
 }
