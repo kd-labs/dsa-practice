@@ -19,6 +19,7 @@ LeetCode Solutions
 | 115  | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/leetcode/DistinctSubsequences.java) |
 | 1143  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestCommonSubsequence.java) |
 | 1035  | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/UncrossedLines.java) |
+| 72  | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/leetcode/EditDistance.java) |
 
 ## Map
 | # | Title | Difficulty | Complexity | Solution |
