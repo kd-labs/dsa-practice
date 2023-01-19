@@ -13,13 +13,14 @@ LeetCode Solutions
 
 ## Dynamic Programming
 | # | Title | Difficulty | Complexity | Solution |
-|---|-------|------------|------|----------|
-| 198  | [House Robber](https://leetcode.com/problems/house-robber/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/HouseRobber.java) |
-| 518  | [Coin Change II](https://leetcode.com/problems/coin-change-ii/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/CoinChangeII.java) |
-| 115  | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/leetcode/DistinctSubsequences.java) |
-| 1143  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestCommonSubsequence.java) |
-| 1035  | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/UncrossedLines.java) |
-| 72  | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/leetcode/EditDistance.java) |
+|---|-------|------------|------------|----------|
+| 198  | [House Robber](https://leetcode.com/problems/house-robber/description/) | Time - O(n) <br> Space - O(1)| Medium     | [Java](./src/main/java/leetcode/HouseRobber.java) |
+| 518  | [Coin Change II](https://leetcode.com/problems/coin-change-ii/description/) | Time - O(n) <br> Space - O(1)| Medium     | [Java](./src/main/java/leetcode/CoinChangeII.java) |
+| 115  | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | Time - O(n) <br> Space - O(1)| Hard       | [Java](./src/main/java/leetcode/DistinctSubsequences.java) |
+| 1143  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | Time - O(n) <br> Space - O(1)| Medium     | [Java](./src/main/java/leetcode/LongestCommonSubsequence.java) |
+| 1035  | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/description/) | Time - O(n) <br> Space - O(1)| Medium     | [Java](./src/main/java/leetcode/UncrossedLines.java) |
+| 72  | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Time - O(n) <br> Space - O(1)| Hard       | [Java](./src/main/java/leetcode/EditDistance.java) |
+| 300  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LongestIncreasingSubsequence.java) |
 
 ## Map
 | # | Title | Difficulty | Complexity | Solution |

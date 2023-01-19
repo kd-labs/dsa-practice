@@ -24,6 +24,9 @@ public class LongestIncreasingSubsequence {
         return len;
     }
 
+    /*
+        This binary search is similar to the problem "Find the next greater element"
+     */
     public int binarySearch(int[] lisArr, int start, int end, int target) {
 
         int ans = 0;
