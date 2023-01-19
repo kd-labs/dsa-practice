@@ -1,7 +1,5 @@
 package codingblocks.strings;
 
-import com.sun.org.apache.xpath.internal.objects.XStringForChars;
-
 import java.util.Scanner;
 
 public class PalindromeString {

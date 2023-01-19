@@ -1,7 +1,5 @@
 package leetcode;
 
-import com.sun.applet2.AppletParameters;
-
 import java.util.Arrays;
 import java.util.HashMap;
 

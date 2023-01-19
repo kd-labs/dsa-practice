@@ -1,7 +1,5 @@
 package leetcode;
 
-import com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport;
-
 import java.util.*;
 
 public class ExclusiveTimeOfFunctions {

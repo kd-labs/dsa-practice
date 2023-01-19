@@ -1,7 +1,5 @@
 package track.slidingwindow.adityaverma;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;

@@ -1,7 +1,5 @@
 package leetcode;
 
-import javafx.util.Pair;
-
 public class MajorityElement {
 
     public static void main(String[] args) {
