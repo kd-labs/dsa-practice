@@ -1,7 +1,5 @@
 package dsa_revision.recursion;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Mazepath {
@@ -13,28 +11,23 @@ public class Mazepath {
 
         int[][] board = new int[rows][cols];
 
-        List<String> paths = new ArrayList();
-        mazepath(board, 0, 0, "", paths);
+        int paths = mazepath(board, 0, 0);
 
-        for (String path : paths) {
-            System.out.print(path + " ");
-        }
-        System.out.println();
-        System.out.println(paths.size());
+        System.out.println(paths);
+
     }
 
-    public static void mazepath(int[][] board, int row, int col, String moves, List<String> paths) {
+    public static int mazepath(int[][] board, int row, int col) {
 
         // Base Case : Positive when we reach bottom right corner
         if(row == board.length-1 && col == board[row].length-1) {
-           paths.add(moves);
-           return;
+           return 1;
         }
 
         // Base Case : Negative
         // when we have moved outside the board
         if(row >= board.length || col >= board[row].length) {
-            return;
+            return 0;
         }
 
         // Mark the cell as visited
@@ -42,15 +35,17 @@ public class Mazepath {
 
         // Recursive Case
         // vertical move
-        mazepath(board, row+1, col, moves.concat("V"), paths);
+        int a = mazepath(board, row+1, col);
 
         // horizontal move
-        mazepath(board, row, col+1, moves.concat("H"), paths);
+        int b = mazepath(board, row, col+1);
 
         // diagonal move
 //        mazepath(board, row+1, col+1, moves.concat("D"), paths);
 
         // Backtrack to undo the operation
         board[row][col] = 0;
+
+        return a+b;
     }
 }
