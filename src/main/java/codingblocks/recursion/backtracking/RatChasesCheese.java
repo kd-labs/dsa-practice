@@ -3,52 +3,77 @@ package codingblocks.recursion.backtracking;
 public class RatChasesCheese {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int[][] arr = new int[5][4];
-        printAllPath(arr, 0, 0);
+        int rows = scanner.nextInt();
+        int cols = scanner.nextInt();
 
+        String[][] board = new String[rows][cols];
+
+        for(int row = 0 ; row < rows ; row++) {
+            String rowData = scanner.next();
+            String[] split = rowData.split("");
+            for(int col = 0 ; col < cols ; col++) {
+                board[row][col] = split[col];
+            }
+        }
+
+        if(!ratChase(board, 0, 0)) {
+            System.out.println("NO PATH FOUND");
+        }
     }
 
-    private static void printAllPath(int[][] arr, int cr, int cc) {
+    private static boolean ratChase(String[][] board, int row, int col) {
 
-        // board boundary case
-        if(cc < 0 || cc >= arr[0].length || cr < 0 || cr >= arr.length || arr[cr][cc] == 1  || arr[cr][cc] == 'X') {
-            return;
+        // Base Case
+        // when board[row][col] is outside board or board[row][col] is already visited i.e. == 1 or board[row][col] is at cell with 'X'
+        // then return false;
+        if(row < 0 || row >= board.length || col < 0 || col >= board[row].length || board[row][col].equalsIgnoreCase("1") || board[row][col].equalsIgnoreCase("X")) {
+            return false;
         }
 
-        // Positive Base Case
-        if(cr == arr.length-1 && cc == arr[0].length-1) {
-            // set the cell
-            arr[cr][cc] = 1;
-            // print the maze
-            for(int i = 0 ; i < arr.length ; i++) {
-                for(int k = 0 ; k < arr[i].length ; k++) {
-                    System.out.print(arr[i][k] + "\t");
-                }
-                System.out.println();
+        // Base Case : Positive
+        if(row == board.length-1 && col == board[row].length-1) {
+            board[row][col] = "1";
+            printBoard(board);
+            board[row][col] = "0";
+            return true;
+        }
+
+        // Otherwise we are currently at a cell which is within board and not blocked and not 1
+        // then mark the cell as 1
+
+        board[row][col] = "1";
+
+        boolean flag = false;
+
+        // Now move up, down, left, right from the current position by making the respective recursive calls for each movement
+
+        // Up movement
+        flag = flag || ratChase(board, row-1, col);
+
+        // Down movement
+        flag = flag || ratChase(board, row+1, col);
+
+        // Left movemenet
+        flag = flag || ratChase(board, row, col-1);
+
+        // Right movement
+        flag = flag || ratChase(board, row, col+1);
+
+        // BackTrack to undo the setting of one
+        board[row][col] = "0";
+
+        return flag;
+    }
+
+    private static void printBoard(String[][] board) {
+
+        for(int i = 0 ; i < board.length ; i++) {
+            for(int k = 0 ; k < board[i].length ; k++) {
+                System.out.print(board[i][k] + " ");
             }
-            arr[cr][cc] = 0;
-            System.out.println("********************************");
-            return;
+            System.out.println();
         }
-
-        // marking the current cell
-        arr[cr][cc] = 1;
-
-        // Now move in all 4 directions from current cell
-        // Direction Matrix
-        int[] r = {1, 0, -1, 0};
-        int[] c = {0, 1, 0, -1};
-
-        for(int i = 0 ; i < 4 ; i++) {
-            // Recursive Case
-            printAllPath(arr, cr+r[i], cc+c[i]);
-        }
-//        printAllPath(arr, cr+1, cc);
-//        printAllPath(arr, cr, cc+1);
-//        printAllPath(arr, cr-1, cc);
-//        printAllPath(arr, cr, cc-1);
-        arr[cr][cc] = 0;
-
     }
 }
