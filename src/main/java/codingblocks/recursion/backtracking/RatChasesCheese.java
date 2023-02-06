@@ -73,7 +73,11 @@ public class RatChasesCheese {
 
         for(int i = 0 ; i < board.length ; i++) {
             for(int k = 0 ; k < board[i].length ; k++) {
-                System.out.print(board[i][k] + " ");
+                if(board[i][k].equalsIgnoreCase("X") || board[i][k].equalsIgnoreCase("O")) {
+                    System.out.println("0" + " ");
+                } else {
+                    System.out.print(board[i][k] + " ");
+                }
             }
             System.out.println();
         }
