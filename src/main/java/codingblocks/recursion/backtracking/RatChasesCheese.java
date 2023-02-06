@@ -1,5 +1,7 @@
 package codingblocks.recursion.backtracking;
 
+import java.util.Scanner;
+
 public class RatChasesCheese {
 
     public static void main(String[] args) {
