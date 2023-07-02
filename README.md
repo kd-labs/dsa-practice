@@ -8,9 +8,10 @@ LeetCode Solutions
 | 17  | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LetterCombinations.java) |
 
 ## BackTracking
-| # | Title | Difficulty | Complexity | Solution |
-|---|-------|------------|------|----------|
-| 51  | [N-Queens](https://leetcode.com/problems/n-queens/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
+| # | Title                                                 | Difficulty | Complexity | Solution |
+|---|-------------------------------------------------------|------------|------|----------|
+| 51  | [N-Queens](https://leetcode.com/problems/n-queens/)   | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
+| 52  | [N-QueensII](https://leetcode.com/problems/n-queens-ii/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/NQueensII.java) |
 
 ## Dynamic Programming
 | # | Title | Difficulty | Complexity | Solution |
