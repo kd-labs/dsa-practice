@@ -4,51 +4,43 @@ import java.util.Arrays;
 
 public class SudokuSolver {
 
-    private char[][] solvedSudoku;
+    private boolean solved = false;
     public void solveSudoku(char[][] board) {
 
-        solvedSudoku = new char[board.length][board[0].length];
         solveSudoku(board, 0, 0);
-        deepCopy(solvedSudoku, board);
         System.out.println(Arrays.deepToString(board));
     }
 
     public void solveSudoku(char[][] board, int currRow, int currCol) {
 
+
+        // if currCol is at board[0].length, then reset the currCol = 0 and go the next row
+        if(currCol == board[0].length) {
+            currCol = 0; currRow++;
+        }
+
         // base case : positive
         if (currRow == board.length) {
-            // print the board
-//            System.out.println(Arrays.deepToString(board));
-            deepCopy(board, solvedSudoku);
+            solved = true;
             return;
         }
 
-        // if you encounter a pre-filled number, then move ahead to find the next '.'
-        while(board[currRow][currCol] != '.') {
-            currCol++;
-            if(currCol == board[0].length) {
-                currCol = 0; currRow++;
-            }
-            if(currRow == board.length) {
-//                System.out.println(Arrays.deepToString(board));
-                deepCopy(board, solvedSudoku);
-                return;
-            }
-        }
-        for(int k = 1 ; k < 10 ; k++) {
-            // check if placing 'k' in currCell is valid
-            char ch = Character.forDigit(k, 10);
-            if(isValid(board, currRow, currCol, ch)) {
-                board[currRow][currCol] = ch;
+        // if curr cell is a #, then move to next cell by making recursive call for currCol+1
+        if(board[currRow][currCol] != '.') {
+            solveSudoku(board, currRow, currCol+1);
+        } else {
+            // if curr cell is a '.', then solve the cell by looping thru 1-9 and  finding the valid #
+            for(char ch = '1' ; ch <= '9' ; ch++) {
+                // check if placing 'ch' in currCell is valid
+                if(isValid(board, currRow, currCol, ch)) {
+                    board[currRow][currCol] = ch;
 
-                // recursive call to next cell
-                if(currCol == board[currRow].length-1) {
-                    solveSudoku(board, currRow+1, 0);
-                } else {
                     solveSudoku(board, currRow, currCol+1);
-                }
 
-                board[currRow][currCol] = '.';
+                    if (solved) return;
+
+                    board[currRow][currCol] = '.';
+                }
             }
         }
     }
