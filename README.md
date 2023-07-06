@@ -9,12 +9,13 @@ LeetCode Solutions
 | 55  | [Jump Game - Without DP](https://leetcode.com/problems/jump-game/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/JumpGame.java) |
 
 ## BackTracking
-| # | Title                                                       | Difficulty | Complexity | Solution |
-|---|-------------------------------------------------------------|------------|------------|----------|
-| 51  | [N-Queens](https://leetcode.com/problems/n-queens/)         | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
-| 52  | [N-QueensII](https://leetcode.com/problems/n-queens-ii/)    | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/NQueensII.java) |
-| 37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/SudokuSolver.java) |
-| 46  | [Permutations](https://leetcode.com/problems/permutations/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Permutations.java) |
+| # | Title                                                                         | Difficulty | Complexity | Solution |
+|---|-------------------------------------------------------------------------------|------------|------------|----------|
+| 51  | [N-Queens](https://leetcode.com/problems/n-queens/)                           | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
+| 52  | [N-QueensII](https://leetcode.com/problems/n-queens-ii/)                      | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/NQueensII.java) |
+| 37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)     | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/SudokuSolver.java) |
+| 46  | [Permutations](https://leetcode.com/problems/permutations/description/)       | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Permutations.java) |
+| 47  | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/PermutationsII.java) |
 
 ## Dynamic Programming
 | # | Title | Difficulty | Complexity | Solution |
