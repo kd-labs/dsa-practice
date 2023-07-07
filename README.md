@@ -16,7 +16,8 @@ LeetCode Solutions
 | 37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)     | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/SudokuSolver.java) |
 | 46  | [Permutations](https://leetcode.com/problems/permutations/description/)       | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Permutations.java) |
 | 47  | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/PermutationsII.java) |
-| 77  | [Combinations](https://leetcode.com/problems/combinations/description/)    | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Combinations.java) |
+| 77  | [Combinations](https://leetcode.com/problems/combinations/description/)       | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Combinations.java) |
+| 39  | [CombinationSum](https://leetcode.com/problems/combination-sum/description/)    | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSum.java) |
 
 ## Dynamic Programming
 | # | Title | Difficulty | Complexity | Solution |
