@@ -15,7 +15,8 @@ LeetCode Solutions
 | 77  | [Combinations](https://leetcode.com/problems/combinations/description/)                                                   | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Combinations.java) |
 | 39  | [CombinationSum](https://leetcode.com/problems/combination-sum/description/)                                              | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSum.java) |
 | 40  | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                   | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumII.java) |
-| 216  | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)                                                  | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumIII.java) |
+| 216  | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)                                     | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumIII.java) |
+| 139  | [Word Break Without DP](https://leetcode.com/problems/word-break/)                                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/WordBreak.java) |
 
 ## Dynamic Programming
 | # | Title | Difficulty | Complexity | Solution |
