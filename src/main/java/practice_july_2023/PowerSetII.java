@@ -1,6 +1,7 @@
 package practice_july_2023;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PowerSetII {
@@ -8,6 +9,7 @@ public class PowerSetII {
     public List<List<Integer>> subsets(int[] nums) {
 
         List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
         subsets(nums, 0, new ArrayList<Integer>(), res);
 
         return res;
