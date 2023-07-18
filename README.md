@@ -2,22 +2,24 @@ LeetCode Solutions
 ========
 
 ## Recurions + BackTracking
-| # | Title                                                                                                                     | Difficulty | Complexity | Solution |
-|---|---------------------------------------------------------------------------------------------------------------------------|------------|------------|----------|
-| 131  | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/submissions/)                             | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/PalindromePartitioning.java) |
+| # | Title                                                                                                          | Difficulty | Complexity | Solution |
+|---|----------------------------------------------------------------------------------------------------------------|------------|------------|----------|
+| 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/submissions/)                  | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/PalindromePartitioning.java) |
 | 17  | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/leetcode/LetterCombinations.java) |
-| 55  | [Jump Game - Without DP](https://leetcode.com/problems/jump-game/description/)                                            | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/JumpGame.java) |
-| 51  | [N-Queens](https://leetcode.com/problems/n-queens/)                                                                       | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
-| 52  | [N-QueensII](https://leetcode.com/problems/n-queens-ii/)                                                                  | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/NQueensII.java) |
-| 37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)                                                 | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/SudokuSolver.java) |
-| 46  | [Permutations](https://leetcode.com/problems/permutations/description/)                                                   | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Permutations.java) |
-| 47  | [Permutations II](https://leetcode.com/problems/permutations-ii/description/)                                             | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/PermutationsII.java) |
-| 77  | [Combinations](https://leetcode.com/problems/combinations/description/)                                                   | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Combinations.java) |
-| 39  | [CombinationSum](https://leetcode.com/problems/combination-sum/description/)                                              | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSum.java) |
-| 40  | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                   | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumII.java) |
-| 216  | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)                                     | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumIII.java) |
-| 139  | [Word Break Without DP](https://leetcode.com/problems/word-break/)                                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/WordBreak.java) |
-| 79  | [Word Search](https://leetcode.com/problems/word-search/)                                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/WordSearch.java) |
+| 55  | [Jump Game - Without DP](https://leetcode.com/problems/jump-game/description/)                                 | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/JumpGame.java) |
+| 51  | [N-Queens](https://leetcode.com/problems/n-queens/)                                                            | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/codingblocks/recursion/backtracking/NQueens.java) |
+| 52  | [N-QueensII](https://leetcode.com/problems/n-queens-ii/)                                                       | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/NQueensII.java) |
+| 37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)                                      | Time - O(n) <br> Space - O(1)| Hard | [Java](./src/main/java/practice_july_2023/SudokuSolver.java) |
+| 46  | [Permutations](https://leetcode.com/problems/permutations/description/)                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Permutations.java) |
+| 47  | [Permutations II](https://leetcode.com/problems/permutations-ii/description/)                                  | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/PermutationsII.java) |
+| 77  | [Combinations](https://leetcode.com/problems/combinations/description/)                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/Combinations.java) |
+| 39  | [CombinationSum](https://leetcode.com/problems/combination-sum/description/)                                   | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSum.java) |
+| 40  | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumII.java) |
+| 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)                          | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/CombinationSumIII.java) |
+| 139 | [Word Break Without DP](https://leetcode.com/problems/word-break/)                                             | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/WordBreak.java) |
+| 79  | [Word Search](https://leetcode.com/problems/word-search/)                                                      | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/WordSearch.java) |
+| 78  | [Subsets](https://leetcode.com/problems/subsets/)                                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/PowerSet.java) |
+| 90  | [Subsets II](https://leetcode.com/problems/subsets-ii/)                                                        | Time - O(n) <br> Space - O(1)| Medium | [Java](./src/main/java/practice_july_2023/PowerSetII.java) |
 
 ## Dynamic Programming
 | # | Title | Difficulty | Complexity | Solution |
